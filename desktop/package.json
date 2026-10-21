@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "مخزن ولاد شلبه - Windows Desktop App",
-  "main": "main.cjs",
+  "main": "app/main.cjs",
   "scripts": {
     "start": "electron .",
     "dist:win": "electron-builder --win nsis --x64 --ia32"
@@ -20,18 +20,15 @@
       "output": "dist"
     },
     "files": [
-      "main.cjs",
-      "preload.cjs",
-      "app/**/*"
+      "app/main.cjs",
+      "app/preload.cjs",
+      "app/app/**/*"
     ],
     "win": {
       "target": [
         {
           "target": "nsis",
-          "arch": [
-            "x64",
-            "ia32"
-          ]
+          "arch": ["x64", "ia32"]
         }
       ],
       "artifactName": "Makhzan-Owlad-Shalba-Setup-${version}-${arch}.${ext}"
