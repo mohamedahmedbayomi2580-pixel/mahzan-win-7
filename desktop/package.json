@@ -1,4 +1,3 @@
-
 {
   "name": "makhzan-owlad-shalba-windows",
   "version": "1.0.0",
@@ -28,7 +27,10 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64", "ia32"]
+          "arch": [
+            "x64",
+            "ia32"
+          ]
         }
       ],
       "artifactName": "Makhzan-Owlad-Shalba-Setup-${version}-${arch}.${ext}"
